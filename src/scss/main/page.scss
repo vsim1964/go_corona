@@ -1,0 +1,113 @@
+/* ================  PAGE ================= */
+
+.page {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	background-color: $white;
+	border: 0;
+
+	font-family: Rubik;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+.section,
+.main,
+.header,
+.footer {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.main {
+	flex: 1 1 auto;
+}
+
+[class*="__container"] {
+	position: relative;
+	max-width: 1182px;
+	margin: 0 auto;
+	padding: 0 15px;
+	background-color: transparent;
+	border: 0;
+
+	@media (max-width: 1181px) {
+		max-width: 970px;
+	}
+
+	@media (max-width: 991.98px) {
+		max-width: 750px;
+	}
+
+	@media (max-width: 767.98px) {
+		max-width: none;
+		padding: 0 50px;
+	}
+
+	@media (max-width: 479.98px) {}
+}
+
+
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0;
+	border: 0;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	transition: background-color 0.3s ease 0s;
+
+	&:hover {
+		opacity: .75;
+	}
+
+	&:current {
+		color: $btn-red;
+	}
+}
+
+
+ul,
+ol {
+	list-style-type: none;
+}
+
+.button {
+	width: 130px;
+	height: 40px;
+	border-radius: 5px;
+	background: $btn-red;
+
+	font-family: Raleway;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 10px;
+	line-height: 40px;
+	letter-spacing: 0.14em;
+	color: $btn-font;
+	text-transform: uppercase;
+	text-align: center;
+
+	&--blue {
+		background: $btn-blue;
+	}
+}
