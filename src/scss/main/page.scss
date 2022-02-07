@@ -111,3 +111,33 @@ ol {
 		background: $btn-blue;
 	}
 }
+
+.block-text {
+	position: relative;
+
+	&__title {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 44px;
+		line-height: 126%;
+		font-feature-settings: 'pnum'on, 'lnum'on;
+		color: #000000;
+	}
+
+	&__span {
+		color: $btn-blue;
+	}
+
+	&__text {
+		padding: 12px 0 24px;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 138.5%;
+		letter-spacing: 0.08em;
+		font-feature-settings: 'pnum'on,
+			'lnum'on;
+		color: $text;
+	}
+
+}
